@@ -4,49 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Website</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="header nav">
+    <div class="header">
         Header Logo
-        <ul>
+        <ul class="nav">
             <li>header link one</li>
             <li>header link two</li>
             <li>header link three</li>
-        </ul>
-    </div>
+        </ul>           
 
-    <div class="first section">
+    </div>
+    <div class="first-section-background">
+        <div class="first-section">
         <div class="first-section-left">
-            <h1>This website is awesome</h1>
-            <p>This website has some subtext that goes huner the main title. It's a smaller font and the color is lower contrast</p>    
+            <p class="secondary-title">This website is awesome</p>
+            <p class="secondary-text">This website has some subtext that goes huner the main title. It's a smaller font and the color is lower contrast, This website has some subtext that goes huner the main title. It's a smaller font and the color is lower contrast.</p>    
             <button class="top-button">Sing up</button>
         </div>
-        <img src="" alt="this is a placeholder for an image">
-    
+        <div class="first-section-right">
+            <img class="first-section-image" src="./images/mosque.jpg" alt="this is a placeholder for an image">           
+        </div>
+    </div>    
     </div>
 
-    <div class="second section">
-        <h2>Some random information.</h2>
+
+    <div class="second-section">
+        <h2 class="second-section-title">Some random information.</h2>
         <div class="second-section-images">
-            <div><img src='this is a placeholder for an image'>this is some subtext under an illustration or image</div>
-            <div><img src='this is a placeholder for an image'>this is some subtext under an illustration or image</div>
-            <div><img src='this is a placeholder for an image'>this is some subtext under an illustration or image</div>
-            <div><img src='this is a placeholder for an image'>this is some subtext under an illustration or image</div>
+            <div class="frame">
+                <img src='./images/room.jpg' class="second-section-img">
+                <p>this is some subtext under an illustration or image</p>
+            </div>
+            <div class="frame">
+                <img src='./images/restaurant.jpg' class="second-section-img">
+                <p>this is some subtext under an illustration or image</p>
+            </div>
+            <div class="frame">
+                <img src='./images/pool.jpg' class="second-section-img">
+                <p>this is some subtext under an illustration or image</p>
+            </div>
+            <div class="frame">
+                <img src='./images/desert.jpg' class="second-section-img">
+                <p>this is some subtext under an illustration or image</p>
+            </div>
         </div>
     </div>
 
-    <div class="third section">
-        <p>This is an inspiring quote, or a testiomonial from a costumer. Maybe it's just filling up space, or mayne people will actually read it. Who know? All I know is that it looks nice.</p>
-        <p>-Thor, God of Thunder</p>
+    <div class="third-section">
+        <p class="third-section-text">This is an inspiring quote, or a testiomonial from a costumer. Maybe it's just filling up space, or mayne people will actually read it. Who know? All I know is that it looks nice.<br><span class=text-author>-Thor, God of Thunder</span></p>
+
     </div>
 
-    <div class="forth section">
+    <div class="forth-section">
         <div class="forth-section-container">
-            <h3>Call to action! It's time!</h3>
-            <p>Sing up for our product by clicking that button right over there!</p>
-            <div class="forth-section-right">
-                <button class="bottom-button">Sign up</button>
+            <div class="forth-section-left">
+                <p class="forth-section-title">Call to action! It's time!</p>
+                <p class="forth-section-text">Sing up for our product by clicking that button right over there!</p>                
             </div>
+            <div class="forth-section-right">
+                <button class="bottom-button">Sign up</button>                
+            </div>
+
         </div>
     </div>
 

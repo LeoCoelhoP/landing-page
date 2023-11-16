@@ -1,0 +1,241 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+}
+
+.header {
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 24px;
+    padding: 0 10%;
+
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 0.1;
+    flex-basis:content;
+    margin-left: auto;
+    padding: 0;
+    list-style: none;
+
+    font-size: 18px;    
+}
+.first-section-background    {
+    display: flex;
+    background-image: url("../images/moroccan-flower.png");
+    position: relative;
+}
+.first-section {
+    display: flex;
+    align-items: stretch;
+    
+    background-color: rgba(31, 41, 55, 0.97);
+
+    padding: 5% 10%;
+    margin: 0;
+
+    gap: 3%;
+
+}
+
+.secondary-title, .secondary-text {
+    margin: 0;
+}
+
+
+.first-section-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+
+    margin: 0;
+    font-size: 48px;
+    font-weight: bolder;
+
+
+}
+img {
+    max-width: 100%;
+}
+
+.first-section-right {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    flex: 1;
+
+    flex-basis: 0px;
+    background-color: lightgray;
+
+}
+
+
+.second-section {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-section-title {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.second-section-images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap:wrap;
+}
+
+.second-section-img {
+    height: 15em;
+    border: 2px solid #3882F6;
+    border-radius: 8px;
+}
+
+
+.third-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    padding: 5% 15%;
+    background-color: #E5E7EB;
+
+}
+
+.third-section-text {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    font-weight: lighter;
+
+}
+
+.text-author {
+    font-weight: 900;
+    margin: 0;
+    margin-right: 8rem;
+    font-size: 28px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.forth-section {
+    padding: 5% 10%;
+    color:#F9FAF8;
+
+}
+
+.forth-section-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+
+.forth-section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.forth-section-text {
+    margin-top: 0;
+}
+
+.forth-section-right {
+    display: flex;
+    flex: 0.2;
+    align-items: center;
+    box-shadow: none;
+}
+
+.header, .first-section-left {
+    color: #F9FAF8
+}
+.header, .footer {
+   background-color: #1F2937; 
+}
+
+li, .secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.second-section-title, .third-section-text {
+    color: #1F2937; 
+}
+
+button, .forth-section-container {
+    background-color: #3882F6;
+}
+
+.top-button, .bottom-button {
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.top-button {
+    padding: 1%;
+    width: 20%;
+    border: 0;
+    margin-top: 1%;
+}
+
+.bottom-button {
+    padding: 5%;
+    border-color: white;
+    border: 2px solid white;
+    margin: 0;
+
+}
+
+.footer {
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .first-section-background {
+        display: flex;
+        background-image: url("https://images.unsplash.com/photo-1512632578888-169bbbc64f33?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        background-size: cover;
+    }
+
+    .first-section {
+        background-color: rgba(31, 41, 55, 0.5);
+    }
+
+    .first-section-image, .first-section-right {
+        display: none;
+    }
+    
+    .forth-section {
+        padding: 10%;
+        text-align: center;
+    }
+    .bottom-button {
+        margin-bottom: 10%;
+    }
+}
